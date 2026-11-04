@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paul and Pen | Coloring Books</title>
+<meta name="description" content="Bold and easy coloring books for grown-ups: rangoli, snowflake mandalas, fantasy and more. Free printable sample pages.">
+<meta property="og:title" content="Paul and Pen | Coloring Books">
+<meta property="og:description" content="Bold and easy coloring books for grown-ups. Free printable sample pages.">
+<meta property="og:image" content="img/logo.png">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fdf6ec; --card: #ffffff; --ink: #28201c; --muted: #6b5d55; --accent: #c2185b;
+    --btn: #28201c; --btn-ink: #ffffff; --line: #eadfd2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1b1714; --card: #26211d; --ink: #f6eee6; --muted: #bfb2a7; --accent: #f06292;
+      --btn: #f6eee6; --btn-ink: #1b1714; --line: #3a322c;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #1b1714; --card: #26211d; --ink: #f6eee6; --muted: #bfb2a7; --accent: #f06292;
+    --btn: #f6eee6; --btn-ink: #1b1714; --line: #3a322c;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: Lora, Georgia, serif; line-height: 1.55; }
+  .rainbow { height: 8px; background: linear-gradient(90deg,#e94f62,#f6923d,#fac846,#6ebe6e,#46a0d2,#8c64c8); }
+  main { max-width: 980px; margin: 0 auto; padding: 0 16px 48px; }
+  header { text-align: center; padding: 36px 0 12px; }
+  header img { width: 110px; height: 110px; border-radius: 50%; box-shadow: 0 6px 20px rgba(0,0,0,.12); }
+  h1 { font-family: "Playfair Display", Georgia, serif; font-size: clamp(32px, 6vw, 48px); margin: 14px 0 4px; }
+  .tag { color: var(--accent); font-style: italic; font-size: 19px; margin: 0; }
+  .social { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin: 18px 0 6px; }
+  .social a { border: 1.5px solid var(--line); border-radius: 999px; padding: 7px 16px; color: var(--ink); text-decoration: none; font-size: 15px; background: var(--card); }
+  .social a:hover { border-color: var(--accent); }
+  h2 { font-family: "Playfair Display", Georgia, serif; font-size: 28px; margin: 40px 0 6px; text-align: center; }
+  .sub { text-align: center; color: var(--muted); margin: 0 0 22px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr)); gap: 20px; }
+  .book { background: var(--card); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; display: flex; flex-direction: column; }
+  .covers { display: grid; grid-template-columns: 1fr 1fr; gap: 0; background: #efe6da; }
+  .covers img { width: 100%; aspect-ratio: 612/792; object-fit: cover; display: block; }
+  .covers .page { object-fit: contain; background: #fff; }
+  .nocover { aspect-ratio: 612/792; display: grid; place-items: center; text-align: center; padding: 16px; color: #fff;
+             font-family: "Playfair Display", serif; font-size: 26px; background: linear-gradient(160deg,#3b2a5c,#7b4fbf); grid-column: span 2; aspect-ratio: auto; min-height: 220px; }
+  .body { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+  .body h3 { font-family: "Playfair Display", serif; font-size: 22px; margin: 0; }
+  .body p { margin: 0; color: var(--muted); font-size: 15.5px; }
+  .meta { font-size: 13.5px; color: var(--muted); }
+  .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: auto; padding-top: 8px; }
+  .btn { flex: 1; min-width: 120px; text-align: center; padding: 11px 14px; border-radius: 12px; text-decoration: none; font-weight: 600; font-size: 15px; }
+  .buy { background: var(--btn); color: var(--btn-ink); }
+  .free { border: 1.5px solid var(--btn); color: var(--ink); }
+  .note { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; margin-top: 34px; color: var(--muted); font-size: 15px; }
+  .note b { color: var(--ink); }
+  footer { text-align: center; color: var(--muted); font-size: 14px; padding: 28px 16px 40px; }
+</style>
+</head>
+<body>
+<div class="rainbow"></div>
+<main>
+  <header>
+    <img src="img/logo.png" alt="Paul and Pen logo">
+    <h1>Paul and Pen</h1>
+    <p class="tag">Bold &amp; easy coloring books for grown-ups</p>
+    <div class="social">
+      <a href="https://www.instagram.com/paulandpen.studio/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.youtube.com/@paulandpen" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.pinterest.com/paulandpenstudio/" target="_blank" rel="noopener">Pinterest</a>
+    </div>
+  </header>
+
+  <h2>Our books</h2>
+  <p class="sub">Big spaces, clean lines, single-sided pages. Try a free page before you buy.</p>
+  <div class="grid" id="books"></div>
+
+  <div class="note">
+    <b>Outside the US?</b> Each Amazon button opens the US store; Amazon will also offer the book in your local store (UK, Canada, Europe, Australia, Japan) where available.
+    <b>In India?</b> Paperbacks don't ship from Amazon.in yet, but every free sample page is yours to print at home.
+  </div>
+</main>
+<footer>© Paul and Pen · paulandpen.studio@gmail.com</footer>
+
+<script>
+// Add a new book here: cover/page images go in img/, sample PDF in free/.
+const BOOKS = [
+  { id: "03-snowflake-mandalas", title: "Snowflake Mandalas", meta: "50 winter designs · 8.5 × 11 in · paperback",
+    text: "Snowflakes built on the real geometry of snow: six arms, branches at 60 degrees. Bold single flakes, framed winter mandalas and drifting flurries.",
+    amazon: "https://www.amazon.com/dp/B0HPB2DY9P" },
+  { id: "04-snowflake-color-by-number", title: "Snowflake Color by Number", meta: "50 winter & Christmas designs · 8 colors",
+    text: "Every space has a number, every number a color. Fill them in and a snowflake appears. A calm stocking stuffer for any level.",
+    amazon: "https://www.amazon.com/dp/B0HPB4LQ73" },
+  { id: "01-rangoli-kolam", title: "Rangoli & Kolam", meta: "30 traditional Indian designs · 8.5 × 11 in",
+    text: "The patterns drawn at Indian doorsteps every morning: layered rangoli mandalas and sikku kolam looping around a grid of dots.",
+    amazon: "https://www.amazon.com/dp/B0HNTJ2257" },
+  { id: "02-rangoli-color-by-number", title: "Rangoli Color by Number", meta: "30 mandala designs · 8 colors",
+    text: "Rangoli mandalas with a color key on every page. Any basic set of pencils or markers works.",
+    amazon: "https://www.amazon.com/dp/B0HNTPRPT9" },
+  { id: null, title: "Quiet Magic", meta: "Bold & easy fantasy coloring",
+    text: "Witches, fairies, dragons and gentle creatures, in bold, easy lines.",
+    amazon: "https://www.amazon.com/dp/B0HJNH76T5" },
+];
+const grid = document.getElementById("books");
+for (const b of BOOKS) {
+  const art = b.id
+    ? `<div class="covers"><img src="img/${b.id}.jpg" alt="${b.title} cover" loading="lazy"><img class="page" src="img/${b.id}-page.jpg" alt="Sample page from ${b.title}" loading="lazy"></div>`
+    : `<div class="covers"><div class="nocover">${b.title}</div></div>`;
+  const free = b.id ? `<a class="btn free" href="free/${b.id}-sample.pdf" download>Free page</a>` : "";
+  grid.insertAdjacentHTML("beforeend", `<article class="book">${art}<div class="body">
+    <h3>${b.title}</h3><div class="meta">${b.meta}</div><p>${b.text}</p>
+    <div class="actions"><a class="btn buy" href="${b.amazon}" target="_blank" rel="noopener">Buy on Amazon</a>${free}</div></div></article>`);
+}
+</script>
+</body>
+</html>
